@@ -3,16 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>全100話 一覧 | いとなみのかたち</title>
+<title>全100話 ロードマップ | いとなみのかたち</title>
 <meta name="description" content="連載『いとなみのかたち ― 日々の営みに学術が出会うとき』全100話のロードマップ。子育て・食事と料理・家事・余暇と楽しみ・買い物の5領域×各20話。">
-<meta property="og:title" content="全100話 一覧 | いとなみのかたち">
+<meta property="og:title" content="全100話 ロードマップ | いとなみのかたち">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://yuyanishimura0312.github.io/itonami-no-katachi/articles.html">
 <link rel="canonical" href="https://yuyanishimura0312.github.io/itonami-no-katachi/articles.html">
 <link rel="icon" href="https://esse-sense.com/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Noto+Serif+JP:wght@300;400;500;600;700;900&family=Judson:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
+<style>
+.articles-hero { padding: 100px 24px 60px; background: var(--bg); border-bottom: 1px solid var(--line); }
+.articles-hero-inner { max-width: 980px; margin: 0 auto; text-align: center; }
+.articles-hero-eyebrow { font-family: var(--sans); font-size: 11px; letter-spacing: 0.32em; color: var(--accent); font-weight: 700; margin-bottom: 20px; }
+.articles-hero-title { font-family: var(--serif); font-weight: 700; font-size: 44px; line-height: 1.4; color: var(--ink); margin-bottom: 20px; }
+.articles-hero-sub { font-family: var(--serif); font-size: 16px; color: var(--ink-mute); line-height: 1.85; margin-bottom: 40px; }
+.articles-progress { max-width: 360px; margin: 0 auto 16px; height: 6px; background: var(--bg-tint); border: 1px solid var(--line); }
+.articles-progress-bar { height: 100%; background: var(--accent); width: 7%; }
+.articles-progress-text { font-family: var(--sans); font-size: 11px; letter-spacing: 0.18em; color: var(--ink-mute); }
+.articles-quickjump { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 32px; }
+.part-jump { padding: 10px 18px; background: var(--bg-tint); border: 1px solid var(--line); font-family: var(--sans); font-size: 11px; letter-spacing: 0.16em; color: var(--ink-soft); font-weight: 700; text-decoration: none; transition: all .15s; display: flex; flex-direction: column; gap: 4px; }
+.part-jump small { font-family: var(--serif); font-size: 11px; color: var(--ink-mute); letter-spacing: 0.05em; font-weight: 400; }
+.part-jump:hover { border-color: var(--accent); color: var(--accent); }
+
+.articles-main { padding: 60px 24px 80px; max-width: 980px; margin: 0 auto; }
+.part-section { margin-top: 80px; scroll-margin-top: 100px; }
+.part-section:first-of-type { margin-top: 16px; }
+.part-eyebrow { font-family: var(--sans); font-size: 11px; letter-spacing: 0.32em; color: var(--accent); font-weight: 700; margin-bottom: 10px; }
+.part-title { font-family: var(--serif); font-weight: 700; font-size: 28px; color: var(--ink); margin-bottom: 24px; padding-bottom: 18px; border-bottom: 2px solid var(--line); }
+.ep-list { display: flex; flex-direction: column; }
+.ep-row { display: grid; grid-template-columns: 56px 1fr 116px; gap: 18px; padding: 16px 8px; border-bottom: 1px solid var(--line); align-items: center; text-decoration: none; transition: all .15s; border-left: 3px solid transparent; }
+.ep-row.published:hover { background: var(--bg-soft); padding-left: 18px; border-left-color: var(--accent); }
+.ep-row.upcoming { opacity: 0.5; cursor: default; }
+.ep-num { font-family: var(--display); font-weight: 700; font-size: 18px; color: var(--accent); }
+.ep-title { font-family: var(--serif); font-size: 15.5px; color: var(--ink); line-height: 1.55; }
+.ep-row.upcoming .ep-title { color: var(--ink-mute); }
+.ep-status { font-family: var(--sans); font-size: 10px; letter-spacing: 0.16em; color: var(--ink-faint); text-align: right; font-weight: 700; }
+.ep-status.published { color: var(--accent); }
+
+@media (max-width: 760px) {
+  .articles-hero-title { font-size: 28px; }
+  .ep-row { grid-template-columns: 44px 1fr; gap: 12px; }
+  .ep-status { display: none; }
+}
+</style>
 </head>
 <body>
 
@@ -31,454 +67,553 @@
 
 <section class="articles-hero">
   <div class="articles-hero-inner">
-    <div class="hero-eyebrow" style="justify-content:center;">FULL ROADMAP — 全100話の地図</div>
+    <div class="articles-hero-eyebrow">FULL ROADMAP — 全100話のかたち</div>
     <h1 class="articles-hero-title">いとなみのかたち ― 全100話</h1>
-    <p class="articles-hero-sub">5領域 × 各20話 ／ 公開済 7本 ／ 残り 93本 制作中</p>
-    <div class="articles-quickjump"><a href="#part-i">PART I</a> <a href="#part-ii">PART II</a> <a href="#part-iii">PART III</a> <a href="#part-iv">PART IV</a> <a href="#part-v">PART V</a></div>
+    <p class="articles-hero-sub">5領域 × 各20話。日々の営みのいちばん奥に眠る、<br>学術知の地層をめぐる100話の地図。</p>
+    <div class="articles-progress" aria-label="公開進捗"><div class="articles-progress-bar"></div></div>
+    <div class="articles-progress-text">公開済 7 話 ／ 全 100 話</div>
+    <div class="articles-quickjump">
+      <a class="part-jump" href="#part-i">PART I<small>子育てのかたち</small></a>
+      <a class="part-jump" href="#part-ii">PART II<small>食事と料理のかたち</small></a>
+      <a class="part-jump" href="#part-iii">PART III<small>家事のかたち</small></a>
+      <a class="part-jump" href="#part-iv">PART IV<small>余暇と楽しみのかたち</small></a>
+      <a class="part-jump" href="#part-v">PART V<small>買い物のかたち</small></a>
+    </div>
   </div>
 </section>
 
-<div class="part-section" id="part-i">
-  <div class="part-section-inner">
-    <div class="part-eyebrow">PART I</div>
-    <h2 class="part-section-title">子育てのかたち</h2>
-    <div>
-      <div class="ep-row published">
-        <div class="ep-row-num">001</div>
-        <a href="ep001.html">妊娠・出産 ― 身体が二つになる時間</a>
-        <div class="ep-row-status">PUBLISHED</div>
-      </div><div class="ep-row published">
-        <div class="ep-row-num">002</div>
-        <a href="ep002.html">乳児期 ― 泣き声は、誰に届くのか</a>
-        <div class="ep-row-status">PUBLISHED</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">003</div>
-        <a href="#">幼児期 ― ごっこ遊びの哲学</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">004</div>
-        <a href="#">児童期 ― 学校という他者と出会う</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">005</div>
-        <a href="#">思春期 ― 二度目の誕生</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">006</div>
-        <a href="#">親子関係 ― 距離をはかる科学</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">007</div>
-        <a href="#">教育・しつけ ― 何を伝えるのか</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">008</div>
-        <a href="#">共同養育 ― 母親一人では育てない</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">009</div>
-        <a href="#">祖父母世代 ― おばあちゃん仮説</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">010</div>
-        <a href="#">父親の役割 ― 進化と現代の交差点</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">011</div>
-        <a href="#">保育・園 ― 集団で育つこと</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">012</div>
-        <a href="#">ひとり親 ― 弱さは強さでもある</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">013</div>
-        <a href="#">きょうだい ― 最初の小さな社会</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">014</div>
-        <a href="#">世代を超えた継承 ― 物語が引き渡される</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">015</div>
-        <a href="#">子どもの遊び ― 何の役に立たないことの効用</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">016</div>
-        <a href="#">子どもの食 ― 味覚は記憶になる</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">017</div>
-        <a href="#">睡眠 ― 眠りに落ちる練習</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">018</div>
-        <a href="#">病気とケア ― 子どもが弱るとき</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">019</div>
-        <a href="#">別れと喪失 ― 巣立ちの哀しみ</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">020</div>
-        <a href="#">子育てのかたち ― 第I部まとめ</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div>
-    </div>
-  </div>
-</div><div class="part-section alt" id="part-ii">
-  <div class="part-section-inner">
-    <div class="part-eyebrow">PART II</div>
-    <h2 class="part-section-title">食事と料理のかたち</h2>
-    <div>
+<main class="articles-main">
+    <div class="part-section" id="part-i">
+      <div class="part-eyebrow">PART I</div>
+      <h2 class="part-title">子育てのかたち</h2>
+      <div class="ep-list">
+      <a class="ep-row published" href="ep001.html">
+        <div class="ep-num">001</div>
+        <div class="ep-title">妊娠・出産 ― 身体が二つになる時間</div>
+        <div class="ep-status published">PUBLISHED</div>
+      </a>
+      <a class="ep-row published" href="ep002.html">
+        <div class="ep-num">002</div>
+        <div class="ep-title">乳児期 ― 泣き声は、誰に届くのか</div>
+        <div class="ep-status published">PUBLISHED</div>
+      </a>
       <div class="ep-row upcoming">
-        <div class="ep-row-num">021</div>
-        <a href="#">食材選択 ― 棚の前に立つ脳</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">022</div>
-        <a href="#">調理技術 ― 火を通すという発明</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">023</div>
-        <a href="#">献立 ― 一週間を組み立てる</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row published">
-        <div class="ep-row-num">024</div>
-        <a href="ep024.html">共食 ― 「いただきます」は誰に向けるのか</a>
-        <div class="ep-row-status">PUBLISHED</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">025</div>
-        <a href="#">一人食 ― 孤独な食卓の研究</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">026</div>
-        <a href="#">季節と食 ― 旬という時間感覚</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row published">
-        <div class="ep-row-num">027</div>
-        <a href="ep027.html">食と記憶 ― なぜ祖母の味は忘れないのか</a>
-        <div class="ep-row-status">PUBLISHED</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">028</div>
-        <a href="#">発酵・保存 ― 微生物との共生</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">029</div>
-        <a href="#">食と健康 ― 良いものを食べるとは</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">030</div>
-        <a href="#">外食 ― 他人がつくる食卓</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">031</div>
-        <a href="#">弁当 ― 持ち運ばれる愛情</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">032</div>
-        <a href="#">食べ残し・廃棄 ― 捨てられる尊厳</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">033</div>
-        <a href="#">食と地域 ― 土地が育む味</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">034</div>
-        <a href="#">食と移民 ― 遠い国の味が街に住む</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">035</div>
-        <a href="#">食と贈与 ― お返しの経済学</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">036</div>
-        <a href="#">食卓の作法 ― マナーは何を伝えるか</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">037</div>
-        <a href="#">飲み物 ― 水・茶・酒・コーヒー</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">038</div>
-        <a href="#">間食 ― 食事と食事のあいだ</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">039</div>
-        <a href="#">儀礼と食 ― 正月・誕生日・葬儀</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">040</div>
-        <a href="#">食事と料理のかたち ― 第II部まとめ</a>
-        <div class="ep-row-status">COMING SOON</div>
+        <div class="ep-num">003</div>
+        <div class="ep-title">幼児期 ― ごっこ遊びの哲学</div>
+        <div class="ep-status">COMING SOON</div>
       </div>
-    </div>
-  </div>
-</div><div class="part-section" id="part-iii">
-  <div class="part-section-inner">
-    <div class="part-eyebrow">PART III</div>
-    <h2 class="part-section-title">家事のかたち</h2>
-    <div>
-      <div class="ep-row published">
-        <div class="ep-row-num">041</div>
-        <a href="ep041.html">掃除 ― 散らかった部屋が落ち着かない理由</a>
-        <div class="ep-row-status">PUBLISHED</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">042</div>
-        <a href="#">洗濯 ― 衣服に染みた一日を落とす</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">043</div>
-        <a href="#">整理整頓 ― 物の住所を決める</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">044</div>
-        <a href="#">修繕・メンテナンス ― 壊れる前のケア</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">045</div>
-        <a href="#">ゴミ分別 ― 捨てるための社会的協定</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">046</div>
-        <a href="#">家計管理 ― 数字に現れない経済</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">047</div>
-        <a href="#">時間管理 ― 24時間を仕分ける</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">048</div>
-        <a href="#">衣替え ― 季節を着替える</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">049</div>
-        <a href="#">模様替え ― 空間を編集する</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">050</div>
-        <a href="#">植物の世話 ― 育てるという長い対話</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">051</div>
-        <a href="#">ペットの世話 ― 種を超える家族</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">052</div>
-        <a href="#">季節の儀礼 ― 大掃除・節分・お盆</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">053</div>
-        <a href="#">音と匂いの管理 ― 知覚される家</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">054</div>
-        <a href="#">温度と湿度 ― 見えない快適さ</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">055</div>
-        <a href="#">家事分担 ― 見えない労働の見える化</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">056</div>
-        <a href="#">家事と感情 ― 怒りと達成感のあいだ</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">057</div>
-        <a href="#">家事の不可視性 ― 誰が見ていないか</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">058</div>
-        <a href="#">家事のテクノロジー化 ― 洗濯機が変えたもの</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">059</div>
-        <a href="#">家事のアウトソース ― 他人に任せる選択</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">060</div>
-        <a href="#">家事のかたち ― 第III部まとめ</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div>
-    </div>
-  </div>
-</div><div class="part-section alt" id="part-iv">
-  <div class="part-section-inner">
-    <div class="part-eyebrow">PART IV</div>
-    <h2 class="part-section-title">余暇と楽しみのかたち</h2>
-    <div>
       <div class="ep-row upcoming">
-        <div class="ep-row-num">061</div>
-        <a href="#">趣味 ― 役に立たない時間が支えるもの</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">062</div>
-        <a href="#">旅行 ― 日常から離れる科学</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">063</div>
-        <a href="#">スポーツ観戦 ― 他人の成功を喜ぶ脳</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">064</div>
-        <a href="#">読書 ― 文字を辿る孤独な対話</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">065</div>
-        <a href="#">映画・ドラマ ― 物語の中で生きる時間</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">066</div>
-        <a href="#">音楽鑑賞 ― 聴くという身体経験</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">067</div>
-        <a href="#">ゲーム ― 没入と達成の循環</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row published">
-        <div class="ep-row-num">068</div>
-        <a href="ep068.html">散歩 ― 足が動くと、頭の何かがほどける</a>
-        <div class="ep-row-status">PUBLISHED</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">069</div>
-        <a href="#">温泉・銭湯 ― 裸の連帯</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">070</div>
-        <a href="#">フェス・イベント ― 集団の興奮の生理</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">071</div>
-        <a href="#">ペットとの時間 ― 種を超えた癒し</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">072</div>
-        <a href="#">DIY ― 自分でつくるということ</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">073</div>
-        <a href="#">ガーデニング ― 土に手を入れる効用</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">074</div>
-        <a href="#">創作 ― なぜ人は作らずにいられないか</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">075</div>
-        <a href="#">コレクション ― 集めるという情熱</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">076</div>
-        <a href="#">ボランティア ― 利他の科学</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">077</div>
-        <a href="#">推し活 ― 距離を超える愛着</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">078</div>
-        <a href="#">一人時間 ― 孤独と充足の境界</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">079</div>
-        <a href="#">何もしない時間 ― 怠惰の哲学</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">080</div>
-        <a href="#">余暇と楽しみのかたち ― 第IV部まとめ</a>
-        <div class="ep-row-status">COMING SOON</div>
+        <div class="ep-num">004</div>
+        <div class="ep-title">児童期 ― 学校という他者と出会う</div>
+        <div class="ep-status">COMING SOON</div>
       </div>
-    </div>
-  </div>
-</div><div class="part-section" id="part-v">
-  <div class="part-section-inner">
-    <div class="part-eyebrow">PART V</div>
-    <h2 class="part-section-title">買い物のかたち</h2>
-    <div>
       <div class="ep-row upcoming">
-        <div class="ep-row-num">081</div>
-        <a href="#">日用品買い物 ― 棚から棚への日課</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">082</div>
-        <a href="#">食品買い物 ― 何を選ぶか毎日問われる</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">083</div>
-        <a href="#">衣服買い物 ― 自分を編集する</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">084</div>
-        <a href="#">家電・家具購入 ― 長く付き合う物の選び方</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">085</div>
-        <a href="#">オンライン購入 ― クリックひとつの距離</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">086</div>
-        <a href="#">ギフト ― 渡すことが目的の買い物</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">087</div>
-        <a href="#">中古・リサイクル ― 物の二度目の人生</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">088</div>
-        <a href="#">衝動買い ― 一瞬の快感の正体</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">089</div>
-        <a href="#">計画的購入 ― 待てる人の脳</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">090</div>
-        <a href="#">値段交渉 ― 相手と決める価格</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row published">
-        <div class="ep-row-num">091</div>
-        <a href="ep091.html">買わない選択 ― カートを閉じる勇気</a>
-        <div class="ep-row-status">PUBLISHED</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">092</div>
-        <a href="#">サブスクリプション ― 所有から利用へ</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">093</div>
-        <a href="#">投資的消費 ― 高くても価値ある選択</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">094</div>
-        <a href="#">コレクター消費 ― 揃える快感</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">095</div>
-        <a href="#">応援消費 ― 支えるための買い物</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">096</div>
-        <a href="#">訪問販売 ― 来訪者から買う選択</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">097</div>
-        <a href="#">路面店・市場 ― 場所が物を変える</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">098</div>
-        <a href="#">値札と価格 ― 数字が決める価値</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">099</div>
-        <a href="#">返品・後悔 ― 買い物の後の感情</a>
-        <div class="ep-row-status">COMING SOON</div>
-      </div><div class="ep-row upcoming">
-        <div class="ep-row-num">100</div>
-        <a href="#">買い物のかたち ― 第V部まとめ</a>
-        <div class="ep-row-status">COMING SOON</div>
+        <div class="ep-num">005</div>
+        <div class="ep-title">思春期 ― 二度目の誕生</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">006</div>
+        <div class="ep-title">親子関係 ― 距離をはかる科学</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">007</div>
+        <div class="ep-title">教育・しつけ ― 何を伝えるのか</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">008</div>
+        <div class="ep-title">共同養育 ― 母親一人では育てない</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">009</div>
+        <div class="ep-title">祖父母世代 ― おばあちゃん仮説</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">010</div>
+        <div class="ep-title">父親の役割 ― 進化と現代の交差点</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">011</div>
+        <div class="ep-title">保育・園 ― 集団で育つこと</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">012</div>
+        <div class="ep-title">ひとり親 ― 弱さは強さでもある</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">013</div>
+        <div class="ep-title">きょうだい ― 最初の小さな社会</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">014</div>
+        <div class="ep-title">世代を超えた継承 ― 物語が引き渡される</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">015</div>
+        <div class="ep-title">子どもの遊び ― 何の役に立たないことの効用</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">016</div>
+        <div class="ep-title">子どもの食 ― 味覚は記憶になる</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">017</div>
+        <div class="ep-title">睡眠 ― 眠りに落ちる練習</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">018</div>
+        <div class="ep-title">病気とケア ― 子どもが弱るとき</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">019</div>
+        <div class="ep-title">別れと喪失 ― 巣立ちの哀しみ</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">020</div>
+        <div class="ep-title">子育てのかたち ― 第I部まとめ</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
       </div>
     </div>
-  </div>
-</div>
+    <div class="part-section" id="part-ii">
+      <div class="part-eyebrow">PART II</div>
+      <h2 class="part-title">食事と料理のかたち</h2>
+      <div class="ep-list">
+      <div class="ep-row upcoming">
+        <div class="ep-num">021</div>
+        <div class="ep-title">食材選択 ― 棚の前に立つ脳</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">022</div>
+        <div class="ep-title">調理技術 ― 火を通すという発明</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">023</div>
+        <div class="ep-title">献立 ― 一週間を組み立てる</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <a class="ep-row published" href="ep024.html">
+        <div class="ep-num">024</div>
+        <div class="ep-title">共食 ― 「いただきます」は誰に向けるのか</div>
+        <div class="ep-status published">PUBLISHED</div>
+      </a>
+      <div class="ep-row upcoming">
+        <div class="ep-num">025</div>
+        <div class="ep-title">一人食 ― 孤独な食卓の研究</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">026</div>
+        <div class="ep-title">季節と食 ― 旬という時間感覚</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <a class="ep-row published" href="ep027.html">
+        <div class="ep-num">027</div>
+        <div class="ep-title">食と記憶 ― なぜ祖母の味は忘れないのか</div>
+        <div class="ep-status published">PUBLISHED</div>
+      </a>
+      <div class="ep-row upcoming">
+        <div class="ep-num">028</div>
+        <div class="ep-title">発酵・保存 ― 微生物との共生</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">029</div>
+        <div class="ep-title">食と健康 ― 良いものを食べるとは</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">030</div>
+        <div class="ep-title">外食 ― 他人がつくる食卓</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">031</div>
+        <div class="ep-title">弁当 ― 持ち運ばれる愛情</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">032</div>
+        <div class="ep-title">食べ残し・廃棄 ― 捨てられる尊厳</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">033</div>
+        <div class="ep-title">食と地域 ― 土地が育む味</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">034</div>
+        <div class="ep-title">食と移民 ― 遠い国の味が街に住む</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">035</div>
+        <div class="ep-title">食と贈与 ― お返しの経済学</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">036</div>
+        <div class="ep-title">食卓の作法 ― マナーは何を伝えるか</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">037</div>
+        <div class="ep-title">飲み物 ― 水・茶・酒・コーヒー</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">038</div>
+        <div class="ep-title">間食 ― 食事と食事のあいだ</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">039</div>
+        <div class="ep-title">儀礼と食 ― 正月・誕生日・葬儀</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">040</div>
+        <div class="ep-title">食事と料理のかたち ― 第II部まとめ</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      </div>
+    </div>
+    <div class="part-section" id="part-iii">
+      <div class="part-eyebrow">PART III</div>
+      <h2 class="part-title">家事のかたち</h2>
+      <div class="ep-list">
+      <a class="ep-row published" href="ep041.html">
+        <div class="ep-num">041</div>
+        <div class="ep-title">掃除 ― 散らかった部屋が落ち着かない理由</div>
+        <div class="ep-status published">PUBLISHED</div>
+      </a>
+      <div class="ep-row upcoming">
+        <div class="ep-num">042</div>
+        <div class="ep-title">洗濯 ― 衣服に染みた一日を落とす</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">043</div>
+        <div class="ep-title">整理整頓 ― 物の住所を決める</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">044</div>
+        <div class="ep-title">修繕・メンテナンス ― 壊れる前のケア</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">045</div>
+        <div class="ep-title">ゴミ分別 ― 捨てるための社会的協定</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">046</div>
+        <div class="ep-title">家計管理 ― 数字に現れない経済</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">047</div>
+        <div class="ep-title">時間管理 ― 24時間を仕分ける</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">048</div>
+        <div class="ep-title">衣替え ― 季節を着替える</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">049</div>
+        <div class="ep-title">模様替え ― 空間を編集する</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">050</div>
+        <div class="ep-title">植物の世話 ― 育てるという長い対話</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">051</div>
+        <div class="ep-title">ペットの世話 ― 種を超える家族</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">052</div>
+        <div class="ep-title">季節の儀礼 ― 大掃除・節分・お盆</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">053</div>
+        <div class="ep-title">音と匂いの管理 ― 知覚される家</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">054</div>
+        <div class="ep-title">温度と湿度 ― 見えない快適さ</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">055</div>
+        <div class="ep-title">家事分担 ― 見えない労働の見える化</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">056</div>
+        <div class="ep-title">家事と感情 ― 怒りと達成感のあいだ</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">057</div>
+        <div class="ep-title">家事の不可視性 ― 誰が見ていないか</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">058</div>
+        <div class="ep-title">家事のテクノロジー化 ― 洗濯機が変えたもの</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">059</div>
+        <div class="ep-title">家事のアウトソース ― 他人に任せる選択</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">060</div>
+        <div class="ep-title">家事のかたち ― 第III部まとめ</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      </div>
+    </div>
+    <div class="part-section" id="part-iv">
+      <div class="part-eyebrow">PART IV</div>
+      <h2 class="part-title">余暇と楽しみのかたち</h2>
+      <div class="ep-list">
+      <div class="ep-row upcoming">
+        <div class="ep-num">061</div>
+        <div class="ep-title">趣味 ― 役に立たない時間が支えるもの</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">062</div>
+        <div class="ep-title">旅行 ― 日常から離れる科学</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">063</div>
+        <div class="ep-title">スポーツ観戦 ― 他人の成功を喜ぶ脳</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">064</div>
+        <div class="ep-title">読書 ― 文字を辿る孤独な対話</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">065</div>
+        <div class="ep-title">映画・ドラマ ― 物語の中で生きる時間</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">066</div>
+        <div class="ep-title">音楽鑑賞 ― 聴くという身体経験</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">067</div>
+        <div class="ep-title">ゲーム ― 没入と達成の循環</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <a class="ep-row published" href="ep068.html">
+        <div class="ep-num">068</div>
+        <div class="ep-title">散歩 ― 足が動くと、頭の何かがほどける</div>
+        <div class="ep-status published">PUBLISHED</div>
+      </a>
+      <div class="ep-row upcoming">
+        <div class="ep-num">069</div>
+        <div class="ep-title">温泉・銭湯 ― 裸の連帯</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">070</div>
+        <div class="ep-title">フェス・イベント ― 集団の興奮の生理</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">071</div>
+        <div class="ep-title">ペットとの時間 ― 種を超えた癒し</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">072</div>
+        <div class="ep-title">DIY ― 自分でつくるということ</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">073</div>
+        <div class="ep-title">ガーデニング ― 土に手を入れる効用</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">074</div>
+        <div class="ep-title">創作 ― なぜ人は作らずにいられないか</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">075</div>
+        <div class="ep-title">コレクション ― 集めるという情熱</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">076</div>
+        <div class="ep-title">ボランティア ― 利他の科学</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">077</div>
+        <div class="ep-title">推し活 ― 距離を超える愛着</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">078</div>
+        <div class="ep-title">一人時間 ― 孤独と充足の境界</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">079</div>
+        <div class="ep-title">何もしない時間 ― 怠惰の哲学</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">080</div>
+        <div class="ep-title">余暇と楽しみのかたち ― 第IV部まとめ</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      </div>
+    </div>
+    <div class="part-section" id="part-v">
+      <div class="part-eyebrow">PART V</div>
+      <h2 class="part-title">買い物のかたち</h2>
+      <div class="ep-list">
+      <div class="ep-row upcoming">
+        <div class="ep-num">081</div>
+        <div class="ep-title">日用品買い物 ― 棚から棚への日課</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">082</div>
+        <div class="ep-title">食品買い物 ― 何を選ぶか毎日問われる</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">083</div>
+        <div class="ep-title">衣服買い物 ― 自分を編集する</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">084</div>
+        <div class="ep-title">家電・家具購入 ― 長く付き合う物の選び方</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">085</div>
+        <div class="ep-title">オンライン購入 ― クリックひとつの距離</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">086</div>
+        <div class="ep-title">ギフト ― 渡すことが目的の買い物</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">087</div>
+        <div class="ep-title">中古・リサイクル ― 物の二度目の人生</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">088</div>
+        <div class="ep-title">衝動買い ― 一瞬の快感の正体</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">089</div>
+        <div class="ep-title">計画的購入 ― 待てる人の脳</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">090</div>
+        <div class="ep-title">値段交渉 ― 相手と決める価格</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <a class="ep-row published" href="ep091.html">
+        <div class="ep-num">091</div>
+        <div class="ep-title">買わない選択 ― カートを閉じる勇気</div>
+        <div class="ep-status published">PUBLISHED</div>
+      </a>
+      <div class="ep-row upcoming">
+        <div class="ep-num">092</div>
+        <div class="ep-title">サブスクリプション ― 所有から利用へ</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">093</div>
+        <div class="ep-title">投資的消費 ― 高くても価値ある選択</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">094</div>
+        <div class="ep-title">コレクター消費 ― 揃える快感</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">095</div>
+        <div class="ep-title">応援消費 ― 支えるための買い物</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">096</div>
+        <div class="ep-title">訪問販売 ― 来訪者から買う選択</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">097</div>
+        <div class="ep-title">路面店・市場 ― 場所が物を変える</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">098</div>
+        <div class="ep-title">値札と価格 ― 数字が決める価値</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">099</div>
+        <div class="ep-title">返品・後悔 ― 買い物の後の感情</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      <div class="ep-row upcoming">
+        <div class="ep-num">100</div>
+        <div class="ep-title">買い物のかたち ― 第V部まとめ</div>
+        <div class="ep-status">COMING SOON</div>
+      </div>
+      </div>
+    </div>
+</main>
 
 <footer class="site-footer">
   <div class="site-footer-inner">

@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>いとなみのかたち ― 日々の営みに学術が出会うとき | NPO法人ミラツク</title>
-<meta name="description" content="子育て・食事と料理・家事・余暇と楽しみ・買い物。5領域×各20話=100話で、日々の営みの奥にある学術知の地層を読み解く全100回連載。NPO法人ミラツク代表理事・西村勇也。">
+<meta name="description" content="日々の営みに学術が出会うとき。NPO法人ミラツク代表理事・西村勇也による全100回連載。社会を少しでもよくする小さな試みの奥にある『かたち』を、人類史と知の系譜のなかで読み解きます。">
 <meta property="og:title" content="いとなみのかたち ― 日々の営みに学術が出会うとき">
-<meta property="og:description" content="日々の営みに学術が出会う、全100回連載。">
+<meta property="og:description" content="日々の営みに学術が出会うとき。全100回連載。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://yuyanishimura0312.github.io/itonami-no-katachi/">
 <meta name="twitter:card" content="summary_large_image">
@@ -15,7 +15,174 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Noto+Serif+JP:wght@300;400;500;600;700;900&family=Judson:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css">
+<style>
+:root {
+  --bg:           #14110F;
+  --bg-soft:      #1E1B19;
+  --bg-tint:      #25221F;
+  --ink:          #FFFFFF;
+  --ink-soft:     #D8D5D1;
+  --ink-mute:     #A6A29D;
+  --ink-faint:    #7A7672;
+  --accent:       #FF3644;
+  --accent-deep:  #FF5560;
+  --accent-soft:  rgba(255, 54, 68, 0.10);
+  --accent-tint:  rgba(255, 54, 68, 0.22);
+  --line:         #2D2A27;
+  --line-soft:    #1F1D1B;
+  --serif:   "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "Plantin MT Pro", Georgia, serif;
+  --sans:    "Noto Sans JP", "Hiragino Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --display: "Judson", "Noto Serif JP", Georgia, serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body { font-family: var(--serif); background: var(--bg); color: var(--ink); line-height: 1.95; letter-spacing: 0.02em; font-feature-settings: "palt"; -webkit-font-smoothing: antialiased; }
+a { color: var(--accent); text-decoration: none; transition: color .15s; }
+a:hover { color: var(--accent-deep); }
+
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+.btn-primary:focus-visible, .btn-secondary:focus-visible, .nl-btn:focus-visible { outline-offset: 4px; }
+
+/* HEADER */
+.site-header { position: sticky; top: 0; z-index: 100; background: rgba(20, 17, 15, 0.92); backdrop-filter: saturate(160%) blur(10px); -webkit-backdrop-filter: saturate(160%) blur(10px); border-bottom: 1px solid var(--line); }
+.site-header-inner { max-width: 1280px; margin: 0 auto; padding: 0 24px; height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.site-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.site-brand-mark { width: 30px; height: 30px; flex-shrink: 0; }
+.site-brand-mark img { width: 100%; height: auto; display: block; }
+.site-brand-text { font-family: var(--sans); font-size: 12px; font-weight: 700; letter-spacing: 0.16em; color: var(--ink); line-height: 1.3; }
+.site-brand-text small { display: block; font-size: 9.5px; letter-spacing: 0.14em; color: var(--ink-mute); font-weight: 500; margin-top: 2px; }
+.site-nav { display: flex; gap: 28px; font-family: var(--sans); font-size: 12px; letter-spacing: 0.1em; }
+.site-nav a { color: var(--ink-soft); font-weight: 500; padding: 6px 0; border-bottom: 2px solid transparent; transition: color .15s, border-color .15s; }
+.site-nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.site-nav a.active { color: var(--ink); border-bottom-color: var(--ink); }
+
+/* HERO */
+.hero { background: var(--bg); color: var(--ink); padding: 110px 24px 96px; position: relative; border-bottom: 1px solid var(--line); }
+.hero-inner { max-width: 920px; margin: 0 auto; }
+.hero-eyebrow { font-family: var(--sans); font-size: 11px; letter-spacing: 0.4em; color: var(--accent); font-weight: 700; margin-bottom: 28px; display: flex; align-items: center; gap: 14px; }
+.hero-eyebrow::before { content: ""; width: 36px; height: 2px; background: var(--accent); }
+.hero-title { font-family: var(--serif); font-weight: 700; font-size: 58px; line-height: 1.4; letter-spacing: 0.03em; margin-bottom: 22px; color: var(--ink); }
+.hero-title .accent { color: var(--accent); }
+.hero-en { font-family: var(--display); font-weight: 400; font-size: 24px; color: var(--ink-soft); letter-spacing: 0.02em; margin-bottom: 14px; }
+.hero-jp-sub { font-family: var(--serif); font-size: 16px; color: var(--ink-mute); letter-spacing: 0.12em; margin-bottom: 42px; }
+.hero-divider { width: 64px; height: 2px; background: var(--accent); margin: 36px 0 30px; }
+.hero-tagline { font-family: var(--serif); font-size: 18px; color: var(--ink-soft); line-height: 2; letter-spacing: 0.06em; margin-bottom: 44px; max-width: 560px; font-weight: 500; }
+.hero-cta { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+.btn-primary { font-family: var(--sans); font-size: 12.5px; font-weight: 700; letter-spacing: 0.16em; color: #FFFFFF; background: var(--accent); padding: 16px 32px; border-radius: 28px; text-decoration: none; border: none; cursor: pointer; transition: background .15s, transform .15s; }
+.btn-primary:hover { background: var(--accent-deep); transform: translateY(-1px); text-decoration: none; }
+.btn-secondary { font-family: var(--sans); font-size: 12.5px; font-weight: 700; letter-spacing: 0.16em; color: var(--ink); background: transparent; padding: 14px 28px; border: 1px solid var(--ink); border-radius: 28px; text-decoration: none; transition: background .15s, color .15s; }
+.btn-secondary:hover { background: var(--ink); color: var(--bg); text-decoration: none; }
+
+/* SECTIONS */
+.section { padding: 96px 24px; }
+.section-inner { max-width: 760px; margin: 0 auto; }
+.section-label { font-family: var(--sans); font-size: 10.5px; font-weight: 700; letter-spacing: 0.32em; color: var(--accent); margin-bottom: 16px; }
+.section-title { font-family: var(--serif); font-weight: 700; font-size: 32px; line-height: 1.5; letter-spacing: 0.04em; color: var(--ink); margin-bottom: 28px; }
+.section-lead { font-family: var(--serif); font-size: 17px; line-height: 2.05; color: var(--ink-soft); margin-bottom: 28px; letter-spacing: 0.04em; }
+.section p { font-family: var(--serif); font-size: 16px; line-height: 2.1; color: var(--ink); margin-bottom: 24px; text-indent: 1em; letter-spacing: 0.04em; }
+.section p:first-of-type { text-indent: 0; }
+
+/* FIVE FORMS */
+.forms-section { background: var(--bg-soft); }
+.forms-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; margin-top: 48px; }
+.form-card { position: relative; background: var(--bg); padding: 36px 28px 32px; border: 1px solid var(--line); border-top: 3px solid var(--accent); transition: transform .2s, border-color .2s, background .2s; overflow: hidden; }
+.form-card:hover { transform: translateY(-3px); border-color: var(--accent); background: var(--bg-tint); }
+.form-card-num { font-family: var(--display); font-weight: 700; font-size: 56px; color: var(--accent); margin-bottom: 12px; line-height: 0.92; letter-spacing: -0.02em; opacity: 0.95; }
+.form-card-title { font-family: var(--serif); font-weight: 700; font-size: 18px; color: var(--ink); letter-spacing: 0.05em; margin-bottom: 16px; line-height: 1.5; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+.form-card-text { font-family: var(--serif); font-size: 13.5px; color: var(--ink-soft); line-height: 1.95; }
+
+/* SECTION DIVIDER */
+.section-divider { display: flex; align-items: center; gap: 16px; max-width: 760px; margin: 0 auto; padding: 0 24px; opacity: 0.5; }
+.section-divider::before, .section-divider::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+.section-divider-mark { font-family: var(--display); font-weight: 700; font-size: 14px; color: var(--accent); letter-spacing: 0.4em; padding-right: 0.4em; }
+
+/* LATEST */
+.latest-section { background: var(--bg); border-top: 1px solid var(--line); }
+.latest-card { background: var(--bg-soft); border: 1px solid var(--line); padding: 36px 36px 32px; margin-top: 32px; display: grid; grid-template-columns: 80px 1fr; gap: 24px; align-items: start; transition: border-color .15s; }
+.latest-card:hover { border-color: var(--accent); }
+.latest-num { font-family: var(--display); font-weight: 700; font-size: 56px; color: var(--accent); line-height: 1; }
+.latest-meta { font-family: var(--sans); font-size: 10.5px; font-weight: 700; letter-spacing: 0.22em; color: var(--accent); margin-bottom: 10px; }
+.latest-title { font-family: var(--serif); font-weight: 700; font-size: 22px; line-height: 1.6; color: var(--ink); letter-spacing: 0.04em; margin-bottom: 16px; text-decoration: none; display: block; }
+.latest-title:hover { color: var(--accent); }
+.latest-excerpt { font-family: var(--serif); font-size: 14px; color: var(--ink-soft); line-height: 1.95; margin-bottom: 20px; }
+.latest-link { font-family: var(--sans); font-size: 11.5px; font-weight: 700; letter-spacing: 0.16em; color: var(--accent); }
+
+/* AUTHOR */
+.author-section { background: var(--bg-soft); }
+.author-card { background: var(--bg); border: 1px solid var(--line); border-left: 3px solid var(--accent); padding: 32px 36px; margin-top: 32px; }
+.author-name { font-family: var(--serif); font-weight: 700; font-size: 18px; color: var(--ink); letter-spacing: 0.06em; margin-bottom: 16px; }
+.author-card p { font-family: var(--serif); font-size: 14px; line-height: 2.05; color: var(--ink-soft); text-indent: 1em; margin-bottom: 14px; letter-spacing: 0.04em; }
+.author-card p:first-of-type { text-indent: 0; }
+
+/* NEWSLETTER — inverse callout */
+.newsletter { background: var(--ink); color: var(--bg); padding: 72px 24px 76px; }
+.newsletter-inner { max-width: 720px; margin: 0 auto; }
+.newsletter-eyebrow { font-family: var(--sans); font-size: 10.5px; letter-spacing: 0.32em; color: var(--accent); font-weight: 700; margin-bottom: 14px; }
+.newsletter-title { font-family: var(--serif); font-weight: 700; font-size: 28px; line-height: 1.6; letter-spacing: 0.04em; color: var(--bg); margin-bottom: 14px; }
+.newsletter-desc { font-family: var(--serif); font-size: 14.5px; line-height: 2; color: rgba(20, 17, 15, 0.74); margin-bottom: 28px; }
+.nl-form { display: flex; flex-direction: column; gap: 12px; max-width: 460px; }
+.nl-step { display: none; flex-direction: column; gap: 12px; }
+.nl-step.active { display: flex; }
+.nl-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.nl-field input { width: 100%; font-family: var(--serif); font-size: 14px; background: rgba(20, 17, 15, 0.04); border: 1px solid rgba(20, 17, 15, 0.18); color: var(--bg); padding: 12px 14px; letter-spacing: 0.04em; outline: none; transition: border-color .15s, background .15s; }
+.nl-field input::placeholder { color: rgba(20, 17, 15, 0.42); }
+.nl-field input:focus { border-color: var(--accent); background: rgba(20, 17, 15, 0.06); }
+.nl-consent { font-family: var(--sans); font-size: 11.5px; color: rgba(20, 17, 15, 0.7); line-height: 1.7; display: flex; align-items: flex-start; gap: 8px; }
+.nl-consent input { margin-top: 4px; flex-shrink: 0; }
+.nl-btn { font-family: var(--sans); font-size: 12px; font-weight: 700; letter-spacing: 0.16em; color: #FFFFFF; background: var(--accent); border: none; padding: 14px 26px; cursor: pointer; transition: background .15s; }
+.nl-btn:hover { background: var(--accent-deep); }
+.nl-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.nl-trust { font-family: var(--sans); font-size: 11px; color: rgba(20, 17, 15, 0.5); letter-spacing: 0.04em; }
+.nl-done { display: none; padding: 22px 0; font-family: var(--serif); font-size: 16px; color: var(--bg); line-height: 1.9; }
+.nl-done.show { display: block; }
+.nl-form.hide { display: none; }
+.nl-error { display: none; margin-top: 10px; padding: 10px 14px; background: var(--accent-soft); border-left: 3px solid var(--accent); font-family: var(--sans); font-size: 12px; color: var(--bg); letter-spacing: 0.04em; line-height: 1.6; }
+.nl-error.show { display: block; }
+
+/* FOOTER */
+.site-footer { background: var(--bg-soft); padding: 56px 24px 32px; border-top: 1px solid var(--line); }
+.site-footer-inner { max-width: 1180px; margin: 0 auto; }
+.site-footer-cols { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; padding-bottom: 36px; border-bottom: 1px solid var(--line); }
+.site-footer-col h4 { font-family: var(--sans); font-size: 10.5px; font-weight: 700; letter-spacing: 0.22em; color: var(--ink); margin-bottom: 16px; }
+.site-footer-col p, .site-footer-col a { font-family: var(--serif); font-size: 13px; line-height: 2; color: var(--ink-soft); }
+.site-footer-col ul { list-style: none; }
+.site-footer-col li { margin-bottom: 8px; }
+.site-footer-col a:hover { color: var(--accent); }
+.site-footer-bottom { padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; font-family: var(--sans); font-size: 11px; color: var(--ink-mute); letter-spacing: 0.06em; }
+
+@media (min-width: 761px) and (max-width: 1079px) {
+  /* タブレット中間帯 */
+  .hero { padding: 96px 32px 80px; }
+  .hero-inner { max-width: 720px; }
+  .section { padding: 80px 32px; }
+  .latest-card { grid-template-columns: 64px 1fr; padding: 28px 28px 24px; }
+}
+@media (max-width: 760px) {
+  .site-nav { gap: 8px; font-size: 11px; }
+  .site-nav a { padding: 12px 8px; min-height: 44px; display: flex; align-items: center; }
+  .site-brand-text small { display: none; }
+  .hero { padding: 72px 22px 60px; }
+  .hero-title { font-size: 34px; }
+  .hero-en { font-size: 18px; }
+  .hero-jp-sub { font-size: 14px; }
+  .hero-tagline { font-size: 15px; }
+}
+@media (max-width: 480px) {
+  .hero-title { font-size: 28px; line-height: 1.45; word-break: keep-all; overflow-wrap: anywhere; }
+  .hero-title br { display: none; }
+  .hero-en { font-size: 16px; }
+  .hero-tagline { font-size: 14px; line-height: 1.95; }
+  .section { padding: 60px 22px; }
+  .section-title { font-size: 24px; }
+  .latest-card { grid-template-columns: 1fr; gap: 8px; padding: 28px 24px; }
+  .latest-num { font-size: 44px; }
+  .author-card { padding: 26px 26px; }
+  .nl-row { grid-template-columns: 1fr; }
+  .site-footer-cols { grid-template-columns: 1fr; gap: 28px; }
+  .hero-cta { gap: 10px; }
+  .btn-primary, .btn-secondary { width: 100%; text-align: center; padding: 14px 24px; }
+}
+</style>
 </head>
 <body>
 
@@ -28,6 +195,7 @@
     <nav class="site-nav">
       <a href="index.html" class="active">ホーム</a>
       <a href="articles.html">全100話</a>
+      <a href="#newsletter">メルマガ</a>
     </nav>
   </div>
 </header>
@@ -35,83 +203,106 @@
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-eyebrow">A SERIES OF ONE HUNDRED — 全100話 連載</div>
-    <h1 class="hero-title">いとなみの<span class="accent">かたち</span><br>― 日々の営みに学術が出会うとき</h1>
+    <h1 class="hero-title">変化の<span class="accent">かたち</span><br>― 日々の営みに学術が出会うとき</h1>
     <p class="hero-en">Forms of Daily Practice — Where Academia Meets Everyday Acts</p>
-    <p class="hero-tagline">子育て、食事と料理、家事、余暇と楽しみ、買い物。<br>誰もが毎日関わる<strong style="color:var(--ink)">5つの営み</strong>の奥にある、学術知の地層を読み解く全100話。</p>
+    <p class="hero-jp-sub">日々の営みに学術が出会うとき</p>
+    <div class="hero-divider"></div>
+    <p class="hero-tagline">日々の営みのいちばん奥に、<br>学術知の長い系譜が眠っている。</p>
     <div class="hero-cta">
-      <a class="btn btn-primary" href="ep001.html">第1話から読む →</a>
-      <a class="btn btn-secondary" href="articles.html">全100話の地図を見る</a>
+      <a class="btn-primary" href="ep001.html">第1話を読む →</a>
+      <a class="btn-secondary" href="articles.html">全100話の地図</a>
     </div>
   </div>
 </section>
 
 <section class="section">
-  <div class="section-inner narrow">
-    <div class="section-label">ABOUT THIS SERIES — この連載について</div>
-    <h2 class="section-title">日々の営みのなかに、<br>学術知の長い系譜が眠っている。</h2>
-    <p>赤ちゃんが泣くという行為の奥に、<strong>進化人類学・神経科学・愛着理論</strong>の半世紀の蓄積があります。家族と食卓を囲むという行為の奥に、<strong>贈与論・栄養学・神経共鳴</strong>の発見があります。掃除をするという行為の奥に、<strong>環境心理学・哲学・伝統知</strong>の千年の系譜があります。</p>
-    <p>本連載『いとなみのかたち』は、誰もが毎日関わる<strong>5つの具体的な行為</strong>を出発点に、その奥にある学術知の地層を訪ねていく試みです。事例を網羅するのではなく、<strong>日々の営みの裏側で静かに働いている知恵</strong>を、ていねいに編み直していきます。</p>
-    <p>各話の設計には、<strong>知の四角測量</strong>という方針があります。中核となる研究領域、関連する周辺領域、一見無関係に見える隠れた関係領域、そして必ず<strong>哲学・人類学・文学・神話・伝統知</strong>のいずれかを「人文学アンカー」として織り込みます。これによって、現代科学の最先端と人類が長く積み上げてきた知恵を、毎回の記事のなかで出会わせます。</p>
-  </div>
-</section>
-
-<section class="section alt">
   <div class="section-inner">
-    <div class="section-label">FIVE PARTS — 5つの営み</div>
-    <h2 class="section-title">5領域 × 各20話 = 100話</h2>
-    <div class="parts-grid">
-      <a class="part-card" href="articles.html#part-i">
-        <div class="part-card-num">PART I</div>
-        <div class="part-card-title">子育てのかたち</div>
-        <div class="part-card-text">妊娠・出産から、乳幼児期、学童期、思春期、共同養育まで。<br>ep001-020</div>
-      </a>
-      <a class="part-card" href="articles.html#part-ii">
-        <div class="part-card-num">PART II</div>
-        <div class="part-card-title">食事と料理のかたち</div>
-        <div class="part-card-text">食材選択、調理技術、共食、季節と食、食と記憶、食卓の作法まで。<br>ep021-040</div>
-      </a>
-      <a class="part-card" href="articles.html#part-iii">
-        <div class="part-card-num">PART III</div>
-        <div class="part-card-title">家事のかたち</div>
-        <div class="part-card-text">掃除、洗濯、整理整頓、修繕、家計、時間管理、家事の不可視性まで。<br>ep041-060</div>
-      </a>
-      <a class="part-card" href="articles.html#part-iv">
-        <div class="part-card-num">PART IV</div>
-        <div class="part-card-title">余暇と楽しみのかたち</div>
-        <div class="part-card-text">趣味、旅行、散歩、温泉、創作、ペット、何もしない時間まで。<br>ep061-080</div>
-      </a>
-      <a class="part-card" href="articles.html#part-v">
-        <div class="part-card-num">PART V</div>
-        <div class="part-card-title">買い物のかたち</div>
-        <div class="part-card-text">日用品、食品、衣服、家電、ギフト、買わない選択、サブスクまで。<br>ep081-100</div>
-      </a>
+    <div class="section-label">ABOUT THIS SERIES</div>
+    <h2 class="section-title">この連載について</h2>
+    <p class="section-lead">社会が変わるとき、どこかで誰かが大きな号令を発していることはまれです。むしろ、ほとんどの変化は、一見小さな工夫の積み重ねから、いつの間にかかたちを得ていきます。</p>
+    <p>赤ちゃんが泣くという行為の奥に、進化人類学・神経科学・愛着理論の半世紀の蓄積があります。家族と食卓を囲むという行為の奥に、贈与論・栄養学・神経共鳴の発見があります。掃除をするという行為の奥に、環境心理学・哲学・伝統知の千年の系譜があります。日々の営みは、いつも見えない知の地層の上に立っています。</p>
+    <p>本連載は、誰もが毎日関わる5つの具体的な行為を出発点に、その奥にある学術知の地層を訪ねていく試みです。各話は、中核領域・周辺領域・隠れた関係領域・人文学アンカー（哲学・人類学・文学・神話・伝統知のいずれか）の四角測量で編まれます。現代科学の最先端と、人類が長く積み上げてきた知恵が、一話のなかで出会います。</p>
+    <p>百回をかけて、五つの「いとなみのかたち」をめぐる旅をします。読み終わるころ、台所の音、洗濯物を畳む手の動き、子どもの寝顔、買い物カゴに入れる一品が、これまでとは少し違って見えているはずです。</p>
+  </div>
+</section>
+
+<div class="section-divider" aria-hidden="true"><span class="section-divider-mark">◆ ◇ ◆</span></div>
+
+<section class="section forms-section">
+  <div class="section-inner">
+    <div class="section-label">FIVE FORMS</div>
+    <h2 class="section-title">五つの「いとなみのかたち」</h2>
+    <p class="section-lead">本連載は、誰もが毎日関わる5つの具体的な行為に深掘りします。各領域20話ずつ、計100話で、日々の営みの奥にある学術知の地層を編みます。</p>
+
+    <div class="forms-grid">
+      <a class="form-card" href="articles.html#part-i" style="text-decoration:none;color:inherit;display:block;"><div class="form-card-num">I.</div><div class="form-card-title">子育てのかたち</div><div class="form-card-text">妊娠・出産から、乳児期、幼児期、思春期、共同養育、巣立ちまで。生命が育つ20の場面。</div></a>
+      <a class="form-card" href="articles.html#part-ii" style="text-decoration:none;color:inherit;display:block;"><div class="form-card-num">II.</div><div class="form-card-title">食事と料理のかたち</div><div class="form-card-text">食材選択、調理、共食、季節と食、食と記憶、贈与までを訪ねる、食卓の20の風景。</div></a>
+      <a class="form-card" href="articles.html#part-iii" style="text-decoration:none;color:inherit;display:block;"><div class="form-card-num">III.</div><div class="form-card-title">家事のかたち</div><div class="form-card-text">掃除、洗濯、整理整頓、修繕、家計、家事の不可視性まで。生活を支える20の所作。</div></a>
+      <a class="form-card" href="articles.html#part-iv" style="text-decoration:none;color:inherit;display:block;"><div class="form-card-num">IV.</div><div class="form-card-title">余暇と楽しみのかたち</div><div class="form-card-text">趣味、旅行、散歩、温泉、創作、ペット、何もしない時間まで。余白を満たす20の悦び。</div></a>
+      <a class="form-card" href="articles.html#part-v" style="text-decoration:none;color:inherit;display:block;"><div class="form-card-num">V.</div><div class="form-card-title">買い物のかたち</div><div class="form-card-text">日用品、食品、ギフト、買わない選択、サブスクまで。消費という日々の20の選択。</div></a>
     </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="section-inner narrow">
-    <div class="section-label">START HERE — まずはここから</div>
+<section class="section latest-section">
+  <div class="section-inner">
+    <div class="section-label">PILOT EPISODES</div>
     <h2 class="section-title">パイロット公開中</h2>
-    <p>第1話から第91話まで、各部から代表的な記事を先行公開しています。連載の方針と質感をご確認ください。</p>
-    <div style="display:grid;grid-template-columns:1fr;gap:14px;margin-top:32px;">
-      <a class="part-card" href="ep001.html"><div class="part-card-num">001 ／ Part I</div><div class="part-card-title">妊娠・出産 ― 身体が二つになる時間</div></a>
-      <a class="part-card" href="ep002.html"><div class="part-card-num">002 ／ Part I</div><div class="part-card-title">乳児期 ― 泣き声は、誰に届くのか</div></a>
-      <a class="part-card" href="ep024.html"><div class="part-card-num">024 ／ Part II</div><div class="part-card-title">共食 ― 「いただきます」は誰に向けるのか</div></a>
-      <a class="part-card" href="ep027.html"><div class="part-card-num">027 ／ Part II</div><div class="part-card-title">食と記憶 ― なぜ祖母の味は忘れないのか</div></a>
-      <a class="part-card" href="ep041.html"><div class="part-card-num">041 ／ Part III</div><div class="part-card-title">掃除 ― 散らかった部屋が落ち着かない理由</div></a>
-      <a class="part-card" href="ep068.html"><div class="part-card-num">068 ／ Part IV</div><div class="part-card-title">散歩 ― 足が動くと、頭の何かがほどける</div></a>
-      <a class="part-card" href="ep091.html"><div class="part-card-num">091 ／ Part V</div><div class="part-card-title">買わない選択 ― カートを閉じる勇気</div></a>
+    <a href="ep001.html" style="text-decoration:none;">
+      <div class="latest-card">
+        <div class="latest-num">001</div>
+        <div>
+          <div class="latest-meta">PROLOGUE — 序章 第1話</div>
+          <span class="latest-title">いとなみのかたち ― 連載を閉じて</span>
+          <p class="latest-excerpt">検査薬の青い線から始まる、身体が二つになる時間。マイクロキメリズム研究、ジョーダンの出産人類学、メルロ＝ポンティの身体論、イザナミ神話までを編んだ第1話。</p>
+          <span class="latest-link">第1話を読む →</span>
+        </div>
+      </div>
+    </a>
+    <div style="text-align:center;margin-top:40px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a class="btn-primary" href="ep001.html">第1話から読む</a>
+      <a class="btn-secondary" href="articles.html">全100話のロードマップを見る</a>
     </div>
   </div>
 </section>
 
-<section class="section alt">
-  <div class="section-inner narrow">
-    <div class="section-label">AUTHOR — 著者</div>
-    <h2 class="section-title">西村 勇也<small style="display:block;font-family:var(--sans);font-size:13px;color:var(--ink-mute);letter-spacing:0.18em;font-weight:500;margin-top:8px;">NISHIMURA YUYA</small></h2>
-    <p>NPO法人ミラツク代表理事。大阪大学大学院にて人間科学の修士を取得後、人材育成企業、財団法人日本生産性本部を経て、2008年に開始したダイアログBARの活動を前身に、2011年にNPO法人ミラツクを設立。「Emerging Future, we already have（既に在る未来の可能性を実現する）」をテーマに、社会起業家、企業、NPO、行政、大学など異なる立場の人たちが加わるセクター横断のソーシャルイノベーション・プラットフォームの構築に取り組む。</p>
-    <p>連載「<a href="https://yuyanishimura0312.github.io/henka-no-katachi/" target="_blank">変化のかたち</a>」「<a href="https://yuyanishimura0312.github.io/kurashi-no-katachi/" target="_blank">暮らしのかたち</a>」の姉妹編として、本連載「いとなみのかたち」を執筆中。</p>
+<section class="section author-section">
+  <div class="section-inner">
+    <div class="section-label">AUTHOR</div>
+    <h2 class="section-title">著者について</h2>
+    <div class="author-card">
+      <div class="author-name">西村 勇也（にしむら・ゆうや）</div>
+      <p>大阪大学大学院にて人間科学の修士を取得。人材育成企業、財団法人日本生産性本部を経て、二〇〇八年に開始したダイアログBARの活動を前身に、二〇一一年にNPO法人ミラツクを設立。「Emerging Future, we already have（既に在る未来の可能性を実現する）」をテーマに、社会起業家、企業、NPO、行政、大学など異なる立場の人たちが加わるセクター横断のソーシャルイノベーション・プラットフォームの構築と、未来潮流に基づいた新規事業創出のためのプロジェクト運営に取り組む。</p>
+      <p>連載「<a href="https://yuyanishimura0312.github.io/henka-no-katachi/" target="_blank">変化のかたち</a>」「<a href="https://yuyanishimura0312.github.io/kurashi-no-katachi/" target="_blank">暮らしのかたち</a>」の姉妹編として、本連載「いとなみのかたち」を執筆中。</p>
+    </div>
+  </div>
+</section>
+
+<section class="newsletter" id="newsletter">
+  <div class="newsletter-inner">
+    <div class="newsletter-eyebrow">EMERGING FUTURE NEWSLETTER</div>
+    <h2 class="newsletter-title">新しい話の公開を、まずメールで。</h2>
+    <p class="newsletter-desc">本連載「いとなみのかたち」の更新通知、ミラツクの未来洞察・日々の営みと学術の関連の最新情報をお届けします。配信停止はいつでも可能です。</p>
+
+    <form class="nl-form" id="nlForm" onsubmit="return false;">
+      <div class="nl-step active" id="nlStep1">
+        <div class="nl-field"><input type="email" id="nlEmail" placeholder="メールアドレス" autocomplete="email"></div>
+        <button type="button" class="nl-btn" onclick="nlNext()">次へ →</button>
+        <div class="nl-trust">連載更新・実践事例・関連トピックをお届けします</div>
+      </div>
+      <div class="nl-step" id="nlStep2">
+        <div class="nl-row">
+          <div class="nl-field"><input type="text" id="nlName" placeholder="お名前" autocomplete="name"></div>
+          <div class="nl-field"><input type="text" id="nlOrg" placeholder="所属（任意）" autocomplete="organization"></div>
+        </div>
+        <label class="nl-consent"><input type="checkbox" id="nlConsent" checked> メールマガジン配信に同意します。配信停止はいつでも可能です。</label>
+        <button type="button" class="nl-btn" id="nlBtn" onclick="submitNl()">登録する</button>
+      </div>
+    </form>
+    <div class="nl-done" id="nlDone">
+      ようこそ。確認メールをお送りしました。<br>これから一緒に「いとなみのかたち」を読み解いていきましょう。
+    </div>
+    <div class="nl-error" id="nlError" role="alert" aria-live="polite"></div>
   </div>
 </section>
 
@@ -121,7 +312,7 @@
       <div class="site-footer-col">
         <h4>ABOUT</h4>
         <p><strong>いとなみのかたち ― 日々の営みに学術が出会うとき</strong></p>
-        <p style="margin-top:8px;color:var(--ink-mute);">子育て・食事と料理・家事・余暇と楽しみ・買い物の5領域×各20話=100話。NPO法人ミラツク代表理事・西村勇也による連載。</p>
+        <p style="margin-top:8px;color:var(--ink-mute);">日々の営みに学術が出会うとき。NPO法人ミラツク代表理事・西村勇也が、社会変容の奥にある「かたち」を、人類史と知の系譜のなかで読み解く全100回連載。</p>
       </div>
       <div class="site-footer-col">
         <h4>NAVIGATION</h4>
@@ -129,6 +320,7 @@
           <li><a href="index.html">ホーム</a></li>
           <li><a href="articles.html">全100話 一覧</a></li>
           <li><a href="ep001.html">第1話を読む</a></li>
+          <li><a href="#newsletter">メルマガ登録</a></li>
         </ul>
       </div>
       <div class="site-footer-col">
@@ -139,16 +331,66 @@
         </ul>
       </div>
     </div>
-    <div class="site-disclaimer">
-      <p style="margin-bottom:6px;"><strong>本連載の利用について</strong></p>
-      <p>本連載で紹介する研究内容は2026年時点までの公表知見に基づくもので、その後の研究で更新される可能性があります。引用した数値・効果は集団の傾向であり、個人差・文脈差が存在することが前提です。健康・医療・育児・家事・消費に関わる判断は、必要に応じて専門家にご相談ください。</p>
+    <div class="site-disclaimer" style="padding:24px 0;border-top:1px solid var(--line);font-family:var(--serif);font-size:12.5px;line-height:1.95;color:var(--ink-mute);letter-spacing:0.04em;">
+      <p style="margin-bottom:6px;"><strong style="color:var(--ink-soft);">本連載の利用について</strong></p>
+      <p>本連載で紹介する研究内容は2026年時点までの公表知見に基づくもので、その後の研究で更新される可能性があります。引用した数値・効果は集団の傾向であり、個人差・文脈差が存在することが前提です。経営判断・事業判断に応用する際は、自社の状況に応じた検討と、必要に応じた専門家への相談をお願いします。研究の存在・年代・著者は実在検証を行っていますが、解釈や要約に誤りを発見された場合はGitHubリポジトリのIssue等でご指摘ください。</p>
     </div>
     <div class="site-footer-bottom">
       <span>© 2026 NPO法人ミラツク</span>
-      <span>いとなみのかたち</span>
+      <span>いとなみのかたち ― 日々の営みに学術が出会うとき</span>
     </div>
   </div>
 </footer>
+
+<script>
+const NEWSLETTER_API = 'https://claude-code-manual-app.vercel.app/api/community';
+
+function nlNext() {
+  const v = document.getElementById('nlEmail').value.trim();
+  if (!v || !v.includes('@')) {
+    document.getElementById('nlEmail').style.borderColor = 'var(--accent)';
+    document.getElementById('nlEmail').focus();
+    setTimeout(() => document.getElementById('nlEmail').style.borderColor = '', 2000);
+    return;
+  }
+  document.getElementById('nlStep1').classList.remove('active');
+  document.getElementById('nlStep2').classList.add('active');
+  document.getElementById('nlName').focus();
+}
+function _nlShowError(msg) {
+  const e = document.getElementById('nlError');
+  if (e) { e.textContent = msg; e.classList.add('show'); }
+}
+function _nlClearError() {
+  document.getElementById('nlError')?.classList.remove('show');
+}
+async function submitNl() {
+  _nlClearError();
+  const name = document.getElementById('nlName').value.trim();
+  const org = document.getElementById('nlOrg').value.trim();
+  const email = document.getElementById('nlEmail').value.trim();
+  const consent = document.getElementById('nlConsent').checked;
+  const btn = document.getElementById('nlBtn');
+  if (!name) { document.getElementById('nlName').focus(); _nlShowError('お名前を入力してください'); return; }
+  if (!consent) { _nlShowError('メールマガジン配信への同意が必要です'); return; }
+  btn.disabled = true;
+  btn.textContent = '登録中…';
+  try {
+    const res = await fetch(NEWSLETTER_API, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, org, email }),
+    });
+    if (!res.ok) throw new Error('failed');
+    document.getElementById('nlForm').classList.add('hide');
+    document.getElementById('nlDone').classList.add('show');
+  } catch (e) {
+    _nlShowError('登録に失敗しました。少し時間をおいて再度お試しください。');
+    btn.disabled = false;
+    btn.textContent = '登録する';
+  }
+}
+</script>
 
 </body>
 </html>
